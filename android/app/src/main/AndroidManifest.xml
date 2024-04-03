@@ -5,21 +5,61 @@
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
-      android:icon="@mipmap/ic_launcher"
-      android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+
+      <!-- MainActivityDefault -->
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
         android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
         android:launchMode="singleTask"
         android:windowSoftInputMode="adjustResize"
         android:exported="true">
         <intent-filter>
+            <!-- Remove LAUNCHER intent filter from main activity -->
+        </intent-filter>
+      </activity>
+
+      <!-- MainActivity29 -->
+      <activity-alias
+        android:name=".MainActivity29"
+        android:enabled="false"
+        android:exported="true"
+        android:icon="@mipmap/29"
+        android:targetActivity=".MainActivity">
+        <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-      </activity>
+      </activity-alias>
+
+      <!-- MainActivity10 -->
+      <activity-alias
+        android:name=".MainActivity10"
+        android:enabled="false"
+        android:exported="true"
+        android:icon="@mipmap/10"
+        android:targetActivity=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity-alias>
+
+      <!-- MainActivity30 -->
+      <activity-alias
+        android:name=".MainActivity30"
+        android:enabled="false"
+        android:exported="true"
+        android:icon="@mipmap/30"
+        android:targetActivity=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity-alias>
+
     </application>
 </manifest>

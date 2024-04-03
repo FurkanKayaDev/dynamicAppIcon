@@ -48,5 +48,41 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<!-- Add CFBundleIcons key -->
+	<key>CFBundleIcons</key>
+	<dict>
+		<!-- Add CFBundleAlternateIcons key -->
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<!-- Add keys for each new icon -->
+			<key>29</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>29</string> <!-- Replace with the name of your icon file -->
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<true/>
+			</dict>
+			<key>10</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>10</string> <!-- Replace with the name of your icon file -->
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<true/>
+			</dict>
+			<key>30</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>30</string> <!-- Replace with the name of your icon file -->
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>
